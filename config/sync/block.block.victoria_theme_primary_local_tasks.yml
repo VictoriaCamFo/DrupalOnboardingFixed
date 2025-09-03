@@ -1,0 +1,22 @@
+uuid: 8e621749-8b1b-4f18-9be8-7d08f85026e3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - victoria_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: victoria_theme_primary_local_tasks
+theme: victoria_theme
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

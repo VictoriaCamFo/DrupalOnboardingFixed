@@ -1,0 +1,22 @@
+uuid: e362af09-de98-4ac7-aa5a-c6f6ed6444b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - victoria_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: victoria_theme_help
+theme: victoria_theme
+region: header
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 1c014176-dd62-4e73-a06b-1f21a3835630
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - victoria_theme
+id: victoria_theme_views_block__projects_block_1_2
+theme: victoria_theme
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:projects-block_1'
+settings:
+  id: 'views_block:projects-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/projects\r\n/projects*\r\n<front>"
