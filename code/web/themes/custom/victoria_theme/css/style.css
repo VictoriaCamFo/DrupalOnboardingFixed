@@ -1,0 +1,56 @@
+/* === Card base for teasers === */
+.project--teaser {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+  padding: 12px;
+  margin-bottom: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.project--teaser:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+
+/* Title and intern layout */
+.project-teaser__title { margin: 0 0 8px; font-size: 1.05rem; line-height: 1.3; }
+.project-teaser__title-link { text-decoration: none; color: #111; }
+.project-teaser__title-link:hover { text-decoration: underline; }
+
+.project-teaser__wrap {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.project-teaser__thumb img {
+  display: block;
+  width: 96px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-teaser__summary {
+  font-size: .95rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+/* === Grid only for "Latest Projects" === */
+.block-views-block-latest-projects-block-1 .view-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.block-views-block-latest-projects-block-1 .project--teaser {
+  margin-bottom: 0; 
+}
+
+/* Responsive:1 column */
+@media (max-width: 900px) {
+  .block-views-block-latest-projects-block-1 .view-content {
+    grid-template-columns: 1fr;
+  }
+}

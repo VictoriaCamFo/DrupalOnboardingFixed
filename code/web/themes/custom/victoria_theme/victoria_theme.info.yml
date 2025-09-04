@@ -1,0 +1,17 @@
+name: 'Victoria Theme'
+type: theme
+description: 'Custom theme extending Olivero.'
+core_version_requirement: ^11
+base theme: olivero
+libraries:
+  - victoria_theme/global-styling
+  - victoria_theme/global-scripts
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'

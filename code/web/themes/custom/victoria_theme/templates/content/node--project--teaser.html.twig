@@ -1,0 +1,19 @@
+<article{{ attributes.addClass('node','node--project','project','project--teaser') }}>
+  <a href="{{ url }}" class="project-teaser__title-link">
+    <h3 class="project-teaser__title">{{ label }}</h3>
+  </a>
+
+  <div class="project-teaser__wrap">
+    {% if content.field_image2 %}
+      <div class="project-teaser__thumb">
+        {{ content.field_image2 }}
+      </div>
+    {% endif %}
+
+    {% if content.field_body %}
+      <div class="project-teaser__summary">
+        {{ content.field_body }}
+      </div>
+    {% endif %}
+  </div>
+</article>
