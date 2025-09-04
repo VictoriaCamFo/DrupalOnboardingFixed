@@ -1,0 +1,5 @@
+name: 'Custom Hello'
+type: module
+description: 'Provides a Hello World route and a configurable block.'
+package: Custom
+core_version_requirement: ^11
