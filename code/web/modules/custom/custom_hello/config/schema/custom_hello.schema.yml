@@ -1,0 +1,7 @@
+block.settings.custom_hello_message_block:
+  type: block_settings
+  label: 'Hello message (custom_hello) settings'
+  mapping:
+    message:
+      type: string
+      label: 'Message'

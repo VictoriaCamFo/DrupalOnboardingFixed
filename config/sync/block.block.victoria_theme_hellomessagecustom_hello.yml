@@ -1,0 +1,21 @@
+uuid: e9a2fc84-72d8-42aa-97e1-7d289fb7eb82
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_hello
+  theme:
+    - victoria_theme
+id: victoria_theme_hellomessagecustom_hello
+theme: victoria_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: custom_hello_message_block
+settings:
+  id: custom_hello_message_block
+  label: 'Hello message (custom_hello)'
+  label_display: visible
+  provider: custom_hello
+  message: 'Hello from block!'
+visibility: {  }
