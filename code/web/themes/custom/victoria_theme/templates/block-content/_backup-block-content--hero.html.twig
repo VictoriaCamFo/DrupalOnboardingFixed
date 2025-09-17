@@ -1,0 +1,22 @@
+{{ attach_library('victoria_theme/hero') }}
+
+{# Hero section full-width container #}
+<section class="hero" role="region" aria-label="Hero">
+
+  {# Hero media (image background) #}
+  <div class="hero__media">
+    {{ content.field_media_image }}
+  </div>
+
+  {# Hero text content (centered) #}
+  <div class="hero__content">
+    {% if content.field_title %}
+      <h1 class="hero__title">{{ content.field_title }}</h1>
+    {% endif %}
+
+    {% if content.body %}
+      <div class="hero__text">{{ content.body }}</div>
+    {% endif %}
+  </div>
+
+</section>
