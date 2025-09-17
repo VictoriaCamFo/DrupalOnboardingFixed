@@ -1,0 +1,26 @@
+{{ attach_library('victoria_theme/hero') }}
+
+{# Hero section: full-width and responsive #}
+<section class="hero" role="region" aria-label="Hero">
+
+  {# Media layer (image container) #}
+  <div class="hero__media">
+    {% if content.field_image %}
+      {{ content.field_image }}
+    {% elseif content.field_media_image %}
+      {{ content.field_media_image }}
+    {% endif %}
+  </div>
+
+  {# Text content centered over the image #}
+  <div class="hero__content">
+    {% if content.field_title %}
+      <h1 class="hero__title">{{ content.field_title }}</h1>
+    {% endif %}
+
+    {% if content.body %}
+      <div class="hero__text">{{ content.body }}</div>
+    {% endif %}
+  </div>
+
+</section>

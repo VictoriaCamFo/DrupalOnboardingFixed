@@ -8,3 +8,9 @@ global-scripts:
     js/theme.js: {}
   dependencies:
     - core/drupal
+
+hero:
+  version: 1.x
+  css:
+    component:
+      css/components/hero.css: {}
