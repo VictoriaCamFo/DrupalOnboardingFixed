@@ -75,6 +75,7 @@
   }
 }
 
+
 /* Tablet: 768px to 991px  */
 @media (min-width: 768px) and (max-width: 991px) {
   .hero__content {
@@ -82,12 +83,14 @@
   }
 }
 
+
 /*  Desktop Large: 1200px and above  */
 @media (min-width: 1200px) {
   .hero__content {
     padding: 3rem 6rem;
   }
 }
+
 
 /*  Remove side padding if layout wrapper adds it  */
 .layout--onecol .layout__region {
